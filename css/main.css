@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+header nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .container .left img{
+    width: 100px;
+    height: auto;
+}
+header nav .container .center{
+    display: flex;
+    gap: 20px;
+}
+header nav .container .center a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+header nav .container .center a:hover{
+    color: darkorange;
+}
+
+header nav .container .right button{
+    background-color: darkorange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+header nav .container .right button:hover{
+    background-color: orange;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    background: url(https://www.mayacater.com/wp-content/uploads/2020/01/GettyImages-589135154.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page1 .container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.page1 .container .card{
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.page1 .container .card h1{
+    font-size: 90px;
+    font-weight: bold;
+}
+.page1 .container .card h2{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.page1 .container .card p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.page1 .container .card span{
+    display: flex;
+    align-items: center;
+}
+.page1 .container .card span svg{
+    fill: orange;
+}
+.page1 .container .card span a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    transition: all .5s ease-out;
+}
+.page1 .container .card span a:hover{
+    color: orange;
+}
+
+.page2{
+    width: 100%;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.page2 .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.page2 .container h1{
+    font-size: 100px;
+    font-weight: bold;
+}
+.page2 .container .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.page2 .container .bottom .card{
+    width: 25%;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    cursor: pointer;
+}
+.page2 .container .bottom .card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.page2 .container .bottom .card .text{
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    padding: 10px;
+    width: 60%;
+    border-radius: 24px;
+    background-color: orangered;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all .5s ease-in-out;
+}
+.page2 .container .bottom .card .text:hover{
+    background-color: darkorange;
+}
+.page2 .container .bottom .card .text h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.page2 .container .bottom .card .text ol{
+    list-style: none;
+}
+.page2 .container .bottom .card .text ol li{
+    font-size: 16px;
+}
+.page3{
+    width: 100%;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background: linear-gradient(45deg, darkorange, orange);
+}
+
+.page3 .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.page3 .container h1{
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+.page3 .container .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.page3 .container .bottom .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.page3 .container .bottom .left h1{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+.page3 .container .bottom .left .bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.page3 .container .bottom .left .bottom img{
+    width: 45%;
+    height: 200px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.page3 .container .bottom .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.page3 .container .bottom .right h1{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+.page3 .container .bottom .right form{
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: 0 0 5px seashell;
+}
+.page3 .container .bottom .right form span{
+    display: flex;
+    flex-direction: column;
+}
+.page3 .container .bottom .right form span input{
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+.page3 .container .bottom .right form span label{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    color: white;
+}
+.page3 .container .bottom .right form span textarea{
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    resize: vertical;
+}
+.page3 .container .bottom .right form button{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    transition: all .5s ease-in-out;
+}
+.page3 .container .bottom .right form button:hover{
+    background-color: darkorange;
+}
